@@ -12,7 +12,6 @@ import HealthPage from './pages/HealthPage';
 
 import ProtectedRoute from './components/ProtectedRoute';
 import { CustomThemeProvider } from './theme';
-import Navbar from './components/Navbar';
 import GlobalStyles from './GlobalStyles';
 import Layout from './layout';
 
