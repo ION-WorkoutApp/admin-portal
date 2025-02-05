@@ -1,0 +1,17 @@
+src
+│  ├─ api
+│  │  └─ axiosInstance.js  // Axios setup with interceptors
+│  ├─ components
+│  │  ├─ Navbar.jsx        // Top nav bar or sidebar
+│  │  └─ ProtectedRoute.jsx// Higher-order component for route protection
+│  ├─ pages
+│  │  ├─ Login.jsx         // Basic login page
+│  │  ├─ AdminDashboard.jsx// Admin main page
+│  │  ├─ UsersPage.jsx
+│  │  ├─ WorkoutsPage.jsx
+│  │  ├─ ExercisesPage.jsx
+│  │  ├─ ExportsPage.jsx
+│  │  ├─ AuditLogsPage.jsx
+│  │  └─ HealthPage.jsx
+│  ├─ App.jsx              // Main app with router
+│  └─ index.js
