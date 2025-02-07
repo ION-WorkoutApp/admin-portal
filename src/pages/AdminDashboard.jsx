@@ -51,23 +51,23 @@ function AdminDashboard() {
 		<Container>
 			<Title>welcome to the admin dashboard</Title>
 			<Grid>
-				<ModuleCard to="/admin/users">
+				<ModuleCard to="users">
 					<ModuleTitle>users</ModuleTitle>
 					<ModuleSubtitle>manage application users</ModuleSubtitle>
 				</ModuleCard>
-				<ModuleCard to="/admin/workouts">
+				<ModuleCard to="workouts">
 					<ModuleTitle>workouts</ModuleTitle>
 					<ModuleSubtitle>manage workouts and exercises</ModuleSubtitle>
 				</ModuleCard>
-				<ModuleCard to="/admin/exports">
+				<ModuleCard to="exports">
 					<ModuleTitle>export requests</ModuleTitle>
 					<ModuleSubtitle>review and manage export requests</ModuleSubtitle>
 				</ModuleCard>
-				<ModuleCard to="/admin/audit-logs">
+				<ModuleCard to="audit-logs">
 					<ModuleTitle>audit logs</ModuleTitle>
 					<ModuleSubtitle>view system audit logs</ModuleSubtitle>
 				</ModuleCard>
-				<ModuleCard to="/admin/health">
+				<ModuleCard to="health">
 					<ModuleTitle>health</ModuleTitle>
 					<ModuleSubtitle>monitor system health</ModuleSubtitle>
 				</ModuleCard>

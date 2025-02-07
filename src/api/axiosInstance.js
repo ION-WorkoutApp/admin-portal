@@ -1,13 +1,15 @@
 import axios from 'axios';
 
-const BASE_URL = process.env.API_BASE_URL;
+const BASE_URL = "https://test.ion606.com";
 
 const axiosInstance = axios.create({
-	baseURL: BASE_URL,
+	baseURL: BASE_URL
 });
 
 // Attach Authorization header if a token is present:
 axiosInstance.interceptors.request.use((config) => {
+	console.log(`Request: ${config.method.toUpperCase()} ${config.url} || ${BASE_URL}`);
+	
 	const token = localStorage.getItem('token');
 	if (token) {
 		config.headers.Authorization = token;

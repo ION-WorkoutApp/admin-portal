@@ -23,7 +23,10 @@ RUN rm -rf /usr/share/nginx/html/*
 # copy the build output from the builder stage into nginx's public folder
 COPY --from=builder /app/build /usr/share/nginx/html
 
-# expose port 80
+# copy your custom nginx configuration file into the container
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# expose port
 EXPOSE 1122:80
 
 # start nginx in the foreground

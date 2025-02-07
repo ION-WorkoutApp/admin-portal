@@ -52,11 +52,12 @@ function Navbar() {
 	return (
 		<Nav>
 			<StyledLink to="/admin">Dashboard</StyledLink>
-			<StyledLink to="/admin/users">Users</StyledLink>
-			<StyledLink to="/admin/workouts">Workouts</StyledLink>
-			<StyledLink to="/admin/exports">Export Requests</StyledLink>
-			<StyledLink to="/admin/audit-logs">Audit Logs</StyledLink>
-			<StyledLink to="/admin/health">Health</StyledLink>
+			<StyledLink to="/settings">App Settings</StyledLink>
+			<StyledLink to="users">Users</StyledLink>
+			<StyledLink to="workouts">Workouts</StyledLink>
+			<StyledLink to="exports">Export Requests</StyledLink>
+			<StyledLink to="audit-logs">Audit Logs</StyledLink>
+			<StyledLink to="health">Health</StyledLink>
 			<RightContainer>
 				<StyledButton onClick={handleLogout}>logout</StyledButton>
 				<StyledButton onClick={toggleTheme}>toggle theme</StyledButton>

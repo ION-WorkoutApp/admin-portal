@@ -70,7 +70,7 @@ function UsersPage() {
 	const handleDeleteUser = async (userId) => {
 		if (!window.confirm('Are you sure you want to soft-delete this user?')) return;
 		try {
-			await axiosInstance.delete(`/admin/users/${userId}`);
+			await axiosInstance.delete(`users/${userId}`);
 			setUsers(users.filter((u) => u._id !== userId));
 		} catch (error) {
 			console.error('Error deleting user:', error);

@@ -9,6 +9,7 @@ import WorkoutsPage from './pages/WorkoutsPage';
 import ExportsPage from './pages/ExportsPage';
 import AuditLogsPage from './pages/AuditLogsPage';
 import HealthPage from './pages/HealthPage';
+import SettingsPage from './pages/SettingsPage'
 
 import ProtectedRoute from './components/ProtectedRoute';
 import { CustomThemeProvider } from './theme';
@@ -34,7 +35,15 @@ function App() {
 							}
 						/>
 						<Route
-							path="/admin/users"
+							path="/settings"
+							element={
+								<ProtectedRoute>
+									<SettingsPage />
+								</ProtectedRoute>
+							}
+						/>
+						<Route
+							path="/users"
 							element={
 								<ProtectedRoute>
 									<UsersPage />
@@ -42,7 +51,7 @@ function App() {
 							}
 						/>
 						<Route
-							path="/admin/workouts"
+							path="/workouts"
 							element={
 								<ProtectedRoute>
 									<WorkoutsPage />
@@ -50,7 +59,7 @@ function App() {
 							}
 						/>
 						<Route
-							path="/admin/exports"
+							path="/exports"
 							element={
 								<ProtectedRoute>
 									<ExportsPage />
@@ -58,7 +67,7 @@ function App() {
 							}
 						/>
 						<Route
-							path="/admin/audit-logs"
+							path="/audit-logs"
 							element={
 								<ProtectedRoute>
 									<AuditLogsPage />
@@ -66,7 +75,7 @@ function App() {
 							}
 						/>
 						<Route
-							path="/admin/health"
+							path="/health"
 							element={
 								<ProtectedRoute>
 									<HealthPage />
